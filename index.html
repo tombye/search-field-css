@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Search field webkit test page</title>
+<style>
+  fieldset {
+    margin-bottom: 1em;
+  }
+
+  .test2::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  .test3::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  .test4::-webkit-search-results-button {
+    -webkit-appearance: none;
+  }
+
+  .test5::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
+  .test6::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .test6::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+</style>
+</head>
+<body>
+<h1>Search field webkit test page</h1>
+<form action="" method="get">
+  <fieldset>
+    <label for="search1">Default styling</label>
+    <input type="search" id="search1" class="test1" value="lorem ipsum dolor" />
+  </fieldset>
+  <fieldset>
+    <label for="search2">No search-decoration</label>
+    <input type="search" id="search2" class="test2" value="lorem ipsum dolor" />
+    <pre>
+      .test2::-webkit-search-decoration {
+        -webkit-appearance: none;
+       }
+    </pre>
+  </fieldset>
+  <fieldset>
+    <label for="search3">No cancel-button</label>
+    <input type="search" id="search3" class="test3" value="lorem ipsum dolor" />
+    <pre>
+      .test3::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+       }
+    </pre>
+  </fieldset>
+  <fieldset>
+    <label for="search4">No search results button</label>
+    <input type="search" id="search4" class="test5" value="lorem ipsum dolor" />
+    <pre>
+      .test4::-webkit-search-results-button {
+        -webkit-appearance: none;
+       }
+    </pre>
+  </fieldset>
+  <fieldset>
+    <label for="search5">No search results decoration</label>
+    <input type="search" id="search5" class="test5" value="lorem ipsum dolor" />
+    <pre>
+      .test5::-webkit-search-results-decoration {
+        -webkit-appearance: none;
+       }
+    </pre>
+  </fieldset>
+  <fieldset>
+    <label for="search6">No search-decoration & no cancel-button</label>
+    <input type="search" id="search6" class="test6" value="lorem ipsum dolor" />
+    <pre>
+      .test6::-webkit-search-decoration {
+        -webkit-appearance: none;
+       }
+      .test6::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+       }
+    </pre>
+  </fieldset>
+  <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
