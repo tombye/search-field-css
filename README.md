@@ -1,4 +1,4 @@
 search-field-css
 ================
 
-Search field CSS
+Test page for webkit search field CSS.
